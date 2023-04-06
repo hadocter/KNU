@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>과제3</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="소프트웨어-개발3강-예습자료2-과제">소프트웨어 개발(3강 예습자료(2) 과제)</h1>
+<p><span>2023025990 하창우</span></p>
+<h1 id="소프트웨어-개발"><strong>소프트웨어 개발</strong></h1>
+<p>소프트웨어 개발은 어플리케이션, 프레임워크 등을 만들거나 유지보수할 때 수반되는 문제 인식, 설계, 명세서 작성, 프로그래밍, 테스팅, 버그 수정 등의 과정(절차)이다. 해당 과정에서는 프로그래머, 소프트웨어 엔지니어 등의 여러 역할로 나누어진 사람들이 참여하고, 보통 계획적이고 절차적이다. [1][2]</p>
+<h2 id="소프트웨어-공학"><strong>소프트웨어 공학</strong></h2>
+<p>소프트웨어 공학은 소프트웨어 개발 과정의 공학적 체계이다.<br>
+소프트웨어 공학의 여러 기법들은 소프트웨어의 설계, 개발, 유지보수, 테스트, 평가 등을 가능하게 하며, 소프트웨어 공학자가 이것을 수행한다.[3]<br>
+소프트웨어 공학에서는 소프트웨어 그 자체 뿐만 아니라, 정해진 목표를 달성하는데 있어 해당 소프트웨어 시간적, 비용적 효율성 등의 요소 또한 고려한다. [4]</p>
+<h3 id="대규모-소프트웨어-개발"><strong>대규모 소프트웨어 개발</strong></h3>
+<p>실제 기업이나 기관에서 개발하는 각종 프로그램은 그 코드의 양이 매우 방대하고, 그에 따라 개발 기간, 인력, 비용 등도 방대한 것이 일반적이다.<br>
+따라서 이렇게 대규모의 소프트웨어 시스템을 정확하고 유지관리에 용이하게 개발하기 위해 소프트웨어 공학을 활용한다.[1]</p>
+<hr>
+<h2 id="통합개발환경ide"><strong>통합개발환경(IDE)</strong></h2>
+<p>통합개발환경은 모든 개발 과정이 수행되는 하나의 프로그램이며, 소프트웨어 개발자에게 소스 코드 에디터, 빌드 자동화, 디버거 등의 여러 편리한 개발 도구를 제공한다.<br>
+통합개발환경은 최소 앞에서 언급한 3가지 요소를 포함하고 있어야 하며, 추가적으로 린터, 디플로이 도구 등을 포함할 수 있다.<br>
+통합 개발 환경을 사용하는 목적은, 여러가지의 개발 툴들을 개별적으로 설정하고 사용하는 과정을 줄여, 개발의 효율성을 늘리는 것이다. [5]</p>
+<hr>
+<h2 id="소프트웨어-개발-라이프-사이클"><strong>소프트웨어 개발 라이프 사이클</strong></h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Systems_Development_Life_Cycle.jpg/1080px-Systems_Development_Life_Cycle.jpg" alt="img"><br>
+소프트웨어 개발 라이프 사이클이란 소프트웨어 공학에서 시스템을 계획, 개발, 시험, 채택하는 과정을 뜻하는 용어이다. 대개 요구사항 분석 -&gt; 설계 -&gt; 개발 -&gt; 테스트 -&gt; 운영 의 단계로 구성되어 있다.[6]</p>
+<h3 id="타당성-검토"><strong>타당성 검토</strong></h3>
+<p>타당성 검토 단계는, 소프트웨어를 통해 해결하고자 하는 문제의 다른 여러 해결방안들을 비교 분석하여 시간, 재화과 같은 비용적 측면, 또는 지역, 법률, 심리와 같은 것들을 종합적으로 고려해 어떤 것이 더 유리한지를 따져보는, 소프트웨어 개발 라이프 사이클의 단계 중 하나이다.<br>
+타당성 검토를 통해 여러 개발 방법의 장단점을 비교할 수 있고, 더 나아가 이후에 진행될 개발 과정에서 가이드가 되어주기도 한다.<br>
+예를 들어 특정한 소프트웨어를 새로 개발하는 것이 좋을지, 또는 기존에 존재하는 유사 프로그램을 구매하는 것이 좋을지를 비교하는 것 등이 있다. [1]</p>
+<h4 id="타당성-분석-문서"><strong>타당성 분석 문서</strong></h4>
+<p>타당성 분석 문서는 타당성 검토의 결과물이며, 해당 문서는 특정한 해결 방안을 추천할 것인지의 여부를 포함해야 한다. [1]</p>
+<h3 id="문제-분석과-명세서-만들기"><strong>문제 분석과 명세서 만들기</strong></h3>
+<p>타당성 분석 단계의 다음 단계로, 개발이 결정된 프로그램과 해당 프로그램을 통해 해결하고자 하는 문제에 대한 분석이 이루어 진다.<br>
+해당 단계에서는 개발 과정에서의 혼동을 방지하기 위해 문제를 명확한 문장으로 기술한다. [1]</p>
+<h4 id="명세서"><strong>명세서</strong></h4>
+<p>명세서는 특정 소프트웨어 제품, 시스템 등에 대한 세부사항이며, 소프트웨어의 기능, 인터페이스, 성능, 속성(휴대성, 보안성 등), 제한(요구)사항(구현 언어, 리소스 제한, 시스템 등)이 나열되어 있다.<br>
+명세서는 프로그램을 직접 개발하는 개발자에게 최종적으로 전달되는 문서이므로 정확성(Correct), 명확성(Unambiguous), 완벽(Complete) 등의 요건을 만족해야 한다. [7]</p>
+<h3 id="프로그램-설계"><strong>프로그램 설계</strong></h3>
+<p>프로그램 설계 단계에서는 문제 분석과 명세서 만들기 과정을 통해 명확해진, 목적을 달성하는 프로그램을 어떤 식으로 만들지에 대한 설계가 이루어 진다. 이 과정에서는 문제 해결이 수반되며, 이를 위해 저수준 요소, 알고리즘 설계, 전체적인 구조 등을 고려한다.<br>
+프로그램 설계는 간단하게는 플로우차트의 형식을 가지거나, 프로그램의 특성에 따라 부가적인 ux디자인 등이 수반될 수 있다.[1][8]</p>
+<ul>
+<li><strong>분할-정복</strong></li>
+</ul>
+<blockquote>
+<p>일반적으로 분할-정복은 그대로 해결하기 어려운 큰 문제를 여러개의 작은 문제로 분할한 뒤, 각각 해결하여 결과적으로 큰 문제를 해결하는 방법이다. 프로그램 설계에서의 분할-정복 또한 마찬가지로, 하나의 큰 프로그램을 여러개의 작은 부프로그램(sub-program)으로 나누어 작성한 뒤, 작은 부프로그램을 합쳐 큰 프로그램을 만드는 방식이다.[1][21]</p>
+</blockquote>
+<ul>
+<li><strong>객체-지향</strong></li>
+</ul>
+<blockquote>
+<p>객체-지향 프로그래밍에서의 객체-지향과 유사한 말로, 각자의 기능을 수행하는 클래스를 설계하고, 해당 클래스의 객체들을 알맞은 순서로 연결하여 전체 소프트웨어를 만드는 방식이다.</p>
+</blockquote>
+<h4 id="설계-문서"><strong>설계 문서</strong></h4>
+<p>설계 문서는 문제 해결 과정(프로그램)을 여러 부테스크, 부-부테스크로 분리하거나, 여러개의 클래스로 분리하여 설계한 내용이다. [1]</p>
+<h3 id="프로그램-구현개발"><strong>프로그램 구현(개발)</strong></h3>
+<p>프로그램 구현(개발)과정에서는 앞선 단계에서 생성된 프로그램의 설계를 기반으로 프로그램을 직접 개발(코딩)하는 과정이다.[20]</p>
+<h3 id="테스팅"><strong>테스팅</strong></h3>
+<p>테스팅 단계는 소프트웨어의 버그를 검사하고 해당 소프트웨어가 고객의 니즈를 만족하는지 확인한다. 보통 코드를 작성하며 동시에 테스팅을 거치는 경우가 흔하기 때문에 주로 프로그램 구현 과정에서 함께 진행된다.[20]</p>
+<h4 id="디버깅"><strong>디버깅</strong></h4>
+<p>디버깅은 보통 코드에서 버그를 제거하는 행위를 의미한다. 디버깅의 형태는 좁게는 육안 또는 코드 분석기를 사용해 오타를 제거하는 것, 넓게는 비효율적인 코드를 수정해 퍼포먼스를 개선시키는 것 등이 있다. [9][10]</p>
+<ul>
+<li><strong>문법 에러(Syntax error)</strong></li>
+</ul>
+<blockquote>
+<p>문법 에러는 작성된 코드가 프로그래밍 언어의 문법 구문의 규칙을 정확히 따르지 않으면 발생하는 에러이며, 컴파일러가 해당 구문을 이해하지 못해 발생하는 에러이므로 컴파일 시점에서 찾아낼 수 있다. [1]</p>
+</blockquote>
+<ul>
+<li><strong>실행 에러(Runtime error)</strong></li>
+</ul>
+<blockquote>
+<p>실행 에러는 프로그램이 성공적으로 컴파일 되었지만, 프로그램을 실행하는 시점에서 발생하는 에러이다. 보통 프로그램이 멈추거나 비정상적으로 종료되는 현상과 함께 일어나므로 에러 발생 사실이 즉시 인식될 수 있다.<br>
+실행 에러는 흔히 0으로 나누기 에러, 자료형 오버플로우 등이 있다.[11]</p>
+</blockquote>
+<ul>
+<li><strong>논리 에러(Logical error)</strong></li>
+</ul>
+<blockquote>
+<p>논리 오류란 프로그래밍이 의도되지 않은 결과를 만들어 내지만, 프로그래밍 언어의 문법적 측면에서 올바르고, 프로그램이 멈추거나 비정상적으로 종료되는 일이 없는 버그이다.<br>
+논리 오류는 명시적인 현상이 일어나지 않으므로, 입력값에 대한 출력값이 올바른지 직접 확인하는 방식 등으로 확인하여야 한다. [12]</p>
+</blockquote>
+<h4 id="단위-테스팅unit-testing"><strong>단위 테스팅(Unit testing)</strong></h4>
+<p>모듈(부프로그램, 부태스크) 단위로 이루어지는 테스팅이며, 테스트 결과 오류가 없이 의도에 맞게 기능하는 모듈은 큰 프로그램을 이루는 구성요소로서 합쳐진다. 단위 테스팅을 통해 디버깅 과정을 수월하게 만들 수 있다.[1][13]</p>
+<h4 id="통합-테스팅integration-testing"><strong>통합 테스팅(Integration testing)</strong></h4>
+<p>통합 테스팅은 단위 테스팅의 다음 단계로, 여러 모듈들이 각각 테스트되었던 단위 테스팅과 달리, 여러 모듈들을 합친 그룹 형태로 이루어지는 테스트이다. 통합 테스팅에서는 보통 모듈들의 상호작용을 점검한다.[14]</p>
+<h4 id="회귀-테스팅regression-testing"><strong>회귀 테스팅(Regression testing)</strong></h4>
+<p>회귀 테스팅은 기능 추가/변경 등으로 인해 코드에 변화가 생겼을 때, 프로그램의 기존 기능에 문제가 없다는 것을 검증하기 위해 사용된다. [15]</p>
+<h4 id="벤치마킹"><strong>벤치마킹</strong></h4>
+<p>먼저 하드웨어에서 밴치마킹이란, 특정 하드웨어의 성능을 평가하는 작업을 의미한다. 이와 유사하게 소프트웨어의 밴치마킹 또한 해당 소프트웨어의 시간에 대한 성능을 평가하는 작업이다. 시스템이 복잡해질수록 단순히 시스템의 세부사항이나 구조만을 보고 성능을 평가하기에는 무리가 있기 때문에 좀더 실제적인(practical) 벤치마킹을 활용한다. [1][16]</p>
+<h3 id="문서-작업"><strong>문서 작업</strong></h3>
+<p>문서 작업은 해당 소프트웨어가 어떤 기능을 하도록 의도되었는지, 또는 어떻게 사용하면 되는지와 같은 설명을 작성하는 과정이다. 소스 코드 내부에 주석처리를 통해 직접 작성하거나, 외부 문서에 따로 작성할 수 있다.[1][17]</p>
+<h3 id="유지보수"><strong>유지보수</strong></h3>
+<p>유지보수는 소프트웨어가 공급된 이후에도 그 기능과 효율적인 동작을 보장하거나 개선시키기 위해, 또는 고객의 요구에 따라 이루어지는 소프트웨어를 수정하는 과정이다.[18]</p>
+<h4 id="fault-repairs"><strong>Fault repairs</strong></h4>
+<p>전형적인 유지보수의 타입중 하나로, 소프트웨어의 일부에서 버그(오류)가 발생했을 때 해당 오류에 대해 대처하는 것이다.[18]</p>
+<h4 id="environmental-adaptation"><strong>Environmental adaptation</strong></h4>
+<p>Environmental adaption은 환경 또는 시스템(OS, Hardware 등)의 일부의 변화에 따라 시행되는 유지보수 과정이다. 소프트웨어가 바뀐 시스템에서 정상적으로 동작할 수 있게 하기 위해 수행된다.[18]</p>
+<h4 id="functionality-addition-and-modification"><strong>Functionality addition and modification</strong></h4>
+<p>Functionality addition and modification은 고객의 새로운 요구 또는 요구의 변경 등으로 인해 수행되는 소프트웨어의 기능을 변경하거나 성능을 개선시키는 것과 같은 수정으로, 앞선 두개의 수정과는 달리 필요(necessary)에 의한 수정이 아니다.[18][19]</p>
+<hr>
+<h1 id="references">References</h1>
+<p>[1] 고석주 et al.(2021), 4차 산업시대의 컴퓨터학 개론, 도서출판 홍릉</p>
+<p>[2] Wikipedia, Software development<br>
+(<a href="https://en.wikipedia.org/wiki/Software_development">https://en.wikipedia.org/wiki/Software_development</a>)</p>
+<p>[3] Wikipedia, Software engineering<br>
+(<a href="https://en.wikipedia.org/wiki/Software_engineering">https://en.wikipedia.org/wiki/Software_engineering</a>)</p>
+<p>[4] techtarget, software engineering<br>
+(<a href="https://www.techtarget.com/whatis/definition/software-engineering">https://www.techtarget.com/whatis/definition/software-engineering</a>)</p>
+<p>[5] Wikipedia, Integrated development environment<br>
+(<a href="https://en.wikipedia.org/wiki/Integrated_development_environment">https://en.wikipedia.org/wiki/Integrated_development_environment</a>)</p>
+<p>[6] 위키백과, 소프트웨어 개발 수명 주기<br>
+(<a href="https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B0%9C%EB%B0%9C_%EC%88%98%EB%AA%85_%EC%A3%BC%EA%B8%B0">https://ko.wikipedia.org/wiki/소프트웨어_개발_수명_주기</a>)</p>
+<p>[7] IEEE, IEEE Recommended Practice for Software Requirements Specifications(1998 Oct)</p>
+<p>[8] Wikipedia, Software design<br>
+(<a href="https://en.wikipedia.org/wiki/Software_design">https://en.wikipedia.org/wiki/Software_design</a>)</p>
+<p>[9] Microsoft learn, What is debugging?<br>
+(<a href="https://learn.microsoft.com/en-us/visualstudio/debugger/what-is-debugging?view=vs-2022">https://learn.microsoft.com/en-us/visualstudio/debugger/what-is-debugging?view=vs-2022</a>)</p>
+<p>[10] Microsoft learn, Debugging techniques and tools to help you write better code<br>
+(<a href="https://learn.microsoft.com/en-us/visualstudio/debugger/write-better-code-with-visual-studio?view=vs-2022">https://learn.microsoft.com/en-us/visualstudio/debugger/write-better-code-with-visual-studio?view=vs-2022</a>)</p>
+<p>[11] geeksforgeeks, Runtime Errors<br>
+(<a href="https://www.geeksforgeeks.org/runtime-errors/">https://www.geeksforgeeks.org/runtime-errors/</a>)</p>
+<p>[12] 위키백과, 논리 오류<br>
+(<a href="https://ko.wikipedia.org/wiki/%EB%85%BC%EB%A6%AC_%EC%98%A4%EB%A5%98">https://ko.wikipedia.org/wiki/논리_오류</a>)</p>
+<p>[13] javatpoint, Unit Testing<br>
+(<a href="https://www.javatpoint.com/unit-testing">https://www.javatpoint.com/unit-testing</a>)</p>
+<p>[14] javatpoint, Integration testing<br>
+(<a href="https://www.javatpoint.com/integration-testing">https://www.javatpoint.com/integration-testing</a>)</p>
+<p>[15] javatpoint, Regression Testing<br>
+(<a href="https://www.javatpoint.com/regression-testing">https://www.javatpoint.com/regression-testing</a>)</p>
+<p>[16] Wikipedia, Benchmark(computing)<br>
+(<a href="https://en.wikipedia.org/wiki/Benchmark_(computing)">https://en.wikipedia.org/wiki/Benchmark_(computing)</a>)</p>
+<p>[17] Wikipedia, Software documentation<br>
+(<a href="https://en.wikipedia.org/wiki/Software_documentation">https://en.wikipedia.org/wiki/Software_documentation</a>)</p>
+<p>[18] Thales group, What is a Software Maintenance Process? 4 Types of Software Maintenance<br>
+(<a href="https://cpl.thalesgroup.com/software-monetization/four-types-of-software-maintenance">https://cpl.thalesgroup.com/software-monetization/four-types-of-software-maintenance</a>)</p>
+<p>[19] Computernotes, Types of Software Maintenance<br>
+(<a href="https://ecomputernotes.com/software-engineering/types-of-software-maintenance">https://ecomputernotes.com/software-engineering/types-of-software-maintenance</a>)</p>
+<p>[20] amazon aws, what is SDLC(Software Decvelopment Lifecycle)?</p>
+<p>[21] Wikipedia, Divide-and-conquer algorithm<br>
+(<a href="https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm">https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm</a>)</p>
+</div>
+</body>
+
+</html>
