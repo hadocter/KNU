@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>과제4</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="시스템-sw">시스템 SW</h1>
+<p>시스템 소프트웨어는 다른 소프트웨어가 돌아가는 기반이 되며, 하드웨어를 작동시키는 소프트웨어이다. 사용자의 문제를 해결하는 응용 소프트웨어와는 반대의 개념이다. 예시로는 로더, 운영체제, 드라이버 등이 있다.[1][2][3]</p>
+<h3 id="인터페이스">인터페이스</h3>
+<p>인터페이스란 서로 다른 두개의 시스템 사이에서 정보를 주고받는 접점이다.<br>
+이런 정보의 교환은 소프트웨어, 하드웨어, 주변기기, 사람 간에 이루어질 수 있다.[4]</p>
+<h4 id="가상-기계">가상 기계</h4>
+<h4 id="가상-환경">가상 환경</h4>
+<p>가상 기계와 가상 환경은 유사한 뜻을 지니는 단어로, 하드웨어 가상화를 통해 구체적인 하드웨어의 작동 과정을 추상화 한 시스템이다. 소프트웨어 인터페이스를 통해 하드웨어와 상호작용 할 수 있게 해준다. [1][5]</p>
+<h2 id="컴파일러">컴파일러</h2>
+<p>컴파일러는 한 프로그래밍 언어로 작성된 코드를 다른 언어로 바꾸어주는 역할을 하는 소프트웨어이다.<br>
+보통 고급 프로그래밍 언어로 작성된 프로그램을 컴퓨터에서 실행하기 위해 저급 언어로 변환해주는 역할을 한다. [1]</p>
+<h3 id="어휘-분석기">어휘 분석기</h3>
+<p>어휘 분석기는 어휘 분석을 수행하는 프로그램으로, 어휘 분석이란 컴퓨터 프로그램 코드의 문자열들을 의미를 지닌 최소단위인 토큰이란 단위의 연속으로 변환한다.<br>
+토큰의 에시로는 식별자, 키워드, 괄호, 연산자 등이 있다. [6]</p>
+<h3 id="구문-분석기">구문 분석기</h3>
+<p>구문 분석기는 구문 분석을 수행하는 프로그램으로, 구문 분석이란 텍스트 입력을 받아 입력의 데이터 구조를 생성하는 동시에 문법이 정확한지 검사한다. [1][7]</p>
+<h3 id="의미-분석기">의미 분석기</h3>
+<p>구문론에서의 의미 분석이란 구, 절, 문장, 맥락, 글 전체 단위에서 구문적 구조를 통해 의미를 구축하는 과정이다.[8]<br>
+컴퓨터 과학에서의 의미 분석이란 컴퓨터 구성 요소와 구문론적 의미 분석을 합한 개념이며, 구체적으로는 고급 프로그램의 의미가 올바른지를 검사하는 과정이다. [1][9]</p>
+<h3 id="코드-생성기">코드 생성기</h3>
+<p>코드 생성기는 코드 생성을 수행하는 프로그램이며, 코드 생성이란 컴파일러 내에서 소스 코드와 같은 의미를 가지는 중간 형식 코드(intermediate representation)를 목적 시스템에서 바로 실행될 수 있는 머신코드로 변환하는 것이다.[10]</p>
+<h3 id="심볼-테이블">심볼 테이블</h3>
+<p>심볼 테이블은 컴파일러와 인터프리터 등에서 의미 분석의 결과로 산출되는 데이터 구조로, 식별자, 상수, 함수등의 선언과 사용등에 관련한 여러 정보를 담고 있다.</p>
+<h2 id="운영체제">운영체제</h2>
+<p>운영체제는 시스템 소프트웨어의 일종이며, 시스템 리소스(하드웨어 가상 자원)의 제어와 공통 서비스의 제공을 통해 고급 프로그램의 실행의 기반이 되는 프로그램이다.</p>
+<h3 id="컴파일러인터프리터">컴파일러/인터프리터</h3>
+<p>컴파일러와 인터프리터는 모두 고급 소스 코드를 컴퓨터 상에서 실행될 수 있는 저급 언어로 변환하여 실행할 수 있도록 하는 역할을 한다.<br>
+차이점은, 컴파일러는 실행하기 위해 소스코드 전부를 한번에 저급 언어로 변환하여 실행할 수 있는 별도의 파일을 만드는 반면, 인터프리터는 소스 코드의 한줄 한줄씩 바로 변환되어 실행된다.[11]</p>
+<h3 id="로더">로더</h3>
+<p>로더는 운영체제의 일부분으로, 하드디스크등의 저장장치의 프로그램을 주기억장치(RAM)으로 옮기고 그 프로그램이 실행되도록 하는 역할을 담당한다.[12][과제2]</p>
+<h3 id="링커">링커</h3>
+<p>링커란, 프로그램의 제작 과정에서 컴파일러로 생성된 하나이상의 목적코드들을 하나의 실행파일로 합쳐주는 역할을 하는 프로그램이다.[13][과제2]</p>
+<h3 id="스케쥴러">스케쥴러</h3>
+<p>컴퓨터에서 스케쥴링은 태스크를 수행하기 위해 프로세서, 네트워크 등의 리소스를 할당하는 과정이고, 운영체제의 일부인 스케쥴러가 이 과정을 수행한다.<br>
+스케쥴러는 보통 시스템이 효율적으로 작동하게 해주며, 또한 하나의 CPU로 멀티테스킹을 가능하게 만들어 준다. [14]</p>
+<h3 id="파일-시스템">파일 시스템</h3>
+<p>파일 시스템은 운영 체제가 데이터를 저장하고 불러오기 위해 사용하는 방법과 데이터 구조를 뜻한다. 파일 시스템은 공간 관리, 디렉토리, 파일 이름, 메타데이터 등의 기능을 지원하고 관리한다.<br>
+예시로는 FAT, NTFS 등이 있다.[15]</p>
+<h3 id="네트워크-관리자">네트워크 관리자</h3>
+<p>네트워크 관리자는 컴퓨터 네트워크의 이용을 간편하게 하기 위해 사용하는 프로그램이다.[16]</p>
+<h3 id="입출력-관리자">입출력 관리자</h3>
+<p>컴퓨터에 연결된 다양한 종류의 입출력 장치들을 관리하는 역할을 하며, 장치 드라이버 등을 통해 각 하드웨어의 특성에 맞는 제어 방식을 사용한다. [1]</p>
+<h3 id="유틸리티">유틸리티</h3>
+<p>유틸리티는 컴퓨터의 관리, 구성, 최적화, 분석 등에 촛점을 맞춘 프로그램으로, 컴퓨터 전반을 관리하기 위해 사용되며 유저를 위해 특정한 태스크를 수행하는 응용 프로그램과는 차이가 있다.<br>
+유틸리티는 컴퓨터의 부드러운 동작을 가능하게 해주며, 백신 프로그램, 압축 프로그램, 시스템 모니터 등의 다양한 종류가 존재한다. [17][18]</p>
+<h4 id="문서-편집기">문서 편집기</h4>
+<p><strong>(plain)text editor</strong><br>
+텍스트 에디터는 설정 파일, 시스템 파일, 소스 코드 등의 plain text 문서들을 수정하기 위한 프로그램이고, 보통 운영 체제에서 함께 제공된다.[20]</p>
+<p><strong>(rich)text editor</strong><br>
+형식 텍스트 에디터는 디자인, 이미지 등의 복합적인 형식을 포함하고 있는 텍스트 파일을 수정하기 위한 프로그램이다.<br>
+docs, pdf 등의 다양한 규격이 존재하며, 해당 규격을 지원하는 별도의 텍스트 에디터가 있어야지만 수정과 열람이 가능하다. [21]</p>
+<h4 id="라이브러리">라이브러리</h4>
+<p>라이브러리는 다른 프로그램이 동작하기 위해 필요한 데이터와 코드 또는 컴파일된 프로그램의 집합이다. [19]</p>
+<h1 id="references">references</h1>
+<p>[1] 고석주 et al.(2021), 4차 산업시대의 컴퓨터학 개론, 도서출판 홍릉</p>
+<p>[2] Wikipedia, System software<br>
+(<a href="https://en.wikipedia.org/wiki/System_software">https://en.wikipedia.org/wiki/System_software</a>)</p>
+<p>[3] Techtarget whatis, System software<br>
+(<a href="https://www.techtarget.com/whatis/definition/system-software">https://www.techtarget.com/whatis/definition/system-software</a>)</p>
+<p>[4] 위키백과, 인터페이스 (컴퓨팅)<br>
+(<a href="https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4_(%EC%BB%B4%ED%93%A8%ED%8C%85)">https://ko.wikipedia.org/wiki/인터페이스_(컴퓨팅)</a>)</p>
+<p>[5] Wikipedia, Hardware virtualization<br>
+(<a href="https://en.wikipedia.org/wiki/Hardware_virtualization">https://en.wikipedia.org/wiki/Hardware_virtualization</a>)</p>
+<p>[6] Wikipedia, Lexical analysis<br>
+(<a href="https://en.wikipedia.org/wiki/Lexical_analysis">https://en.wikipedia.org/wiki/Lexical_analysis</a>)</p>
+<p>[7] Wikipedia, Parsing<br>
+(<a href="https://en.wikipedia.org/wiki/Parsing">https://en.wikipedia.org/wiki/Parsing</a>)</p>
+<p>[8] Wikipedia, Semantic analysis (linguistics)<br>
+(<a href="https://en.wikipedia.org/wiki/Semantic_analysis_(linguistics)">https://en.wikipedia.org/wiki/Semantic_analysis_(linguistics)</a>)</p>
+<p>[9] Wikipedia, Semantic analysis (computational)<br>
+(<a href="https://en.wikipedia.org/wiki/Semantic_analysis_(computational)">https://en.wikipedia.org/wiki/Semantic_analysis_(computational)</a>)</p>
+<p>[10] Wikipedia, Code generation (compiler)<br>
+(<a href="https://en.wikipedia.org/wiki/Code_generation_(compiler)">https://en.wikipedia.org/wiki/Code_generation_(compiler)</a>)</p>
+<p>[11] 위키백과, 인터프리터<br>
+(<a href="https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0">https://ko.wikipedia.org/wiki/인터프리터</a>)</p>
+<p>[12] 위키백과, 로더 (<a href="https://ko.m.wikipedia.org/wiki/%EB%A1%9C%EB%8D%94_(%EC%BB%B4%ED%93%A8%ED%8C%85)">https://ko.m.wikipedia.org/wiki/로더_(컴퓨팅)</a>)</p>
+<p>[13] Wikipedia, Linker<br>
+(<a href="https://en.wikipedia.org/wiki/Linker">https://en.wikipedia.org/wiki/Linker</a>)</p>
+<p>[14] Wikipedia, Scheduler<br>
+(<a href="https://en.wikipedia.org/wiki/Scheduling_(computing)">https://en.wikipedia.org/wiki/Scheduling_(computing)</a>)</p>
+<p>[15] Wikipedia, File system<br>
+(<a href="https://en.wikipedia.org/wiki/File_system">https://en.wikipedia.org/wiki/File_system</a>)</p>
+<p>[16] <a href="http://compuhoy.com">compuhoy.com</a>, What is network management in operating system?<br>
+(<a href="https://www.compuhoy.com/what-is-network-management-in-operating-system/">https://www.compuhoy.com/what-is-network-management-in-operating-system/</a>)</p>
+<p>[17] geeksforgeeks, Utility Software<br>
+(<a href="https://www.geeksforgeeks.org/utility-software/">https://www.geeksforgeeks.org/utility-software/</a>)</p>
+<p>[18] Wikipedia, Utility software<br>
+(<a href="https://en.wikipedia.org/wiki/Utility_software">https://en.wikipedia.org/wiki/Utility_software</a>)</p>
+<p>[19] lawinsider, System Library definition<br>
+(<a href="https://www.lawinsider.com/dictionary/system-library">https://www.lawinsider.com/dictionary/system-library</a>)</p>
+<p>[20] Wikipedia, Text editor<br>
+(<a href="https://en.wikipedia.org/wiki/Text_editor">https://en.wikipedia.org/wiki/Text_editor</a>)</p>
+<p>[21] Wikipedia, Formatted text<br>
+(<a href="https://en.wikipedia.org/wiki/Formatted_text">https://en.wikipedia.org/wiki/Formatted_text</a>)</p>
+</div>
+</body>
+
+</html>
