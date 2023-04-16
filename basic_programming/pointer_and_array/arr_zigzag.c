@@ -26,15 +26,28 @@ int main()
     int csum =0;
     int i = 0;
 
+    //printf("%d", arr1D[pos1d(pos, base)]);
+
     while(i<arrlen)
     {
-        printf("%d %d %d\n", i, pos[0],pos[1]);
-        if((pos[(xory+1)%2])==0 || (pos[(xory+1)%2])==7 )
+        //printf("%d %d %d\n", i, pos[0],pos[1]);
+        printf("%d ", arr1D[pos1d(pos, base)]);
+        if((pos[(xory+1)%2])==0 && pos[xory%2]!= 7)
         {
             pos[xory%2]++;
             csum++;
             xory++;
-            printf("%d %d %d\n", i, pos[0],pos[1]);
+            //printf("%d %d %d\n", i, pos[0],pos[1]);
+            printf("%d ", arr1D[pos1d(pos, base)]);
+            i++;
+        }
+        if((pos[(xory)%2])==7 )
+        {
+            pos[(xory+1)%2]++;
+            csum++;
+            xory++;
+            //printf("%d %d %d\n", i, pos[0],pos[1]);
+            printf("%d ", arr1D[pos1d(pos, base)]);
             i++;
         }
 
