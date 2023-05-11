@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="컴퓨터망">컴퓨터망</h1>
+<p>컴퓨터 네트워크는 서로 정보를 교환하는 네트워크 노드상의 컴퓨터들의 집합을 의미한다.<br>
+컴퓨터 네트워크에서 디지털 연결을 통해 연결된 컴퓨터들은 정해진 정보 교환 프로토콜에 따라 서로 소통한다.<br>
+위와 같은 연결의 종류는 일반적으로 물리적인 선을 통한 연결, 광학 연결, rf등의 무선 연결 등이 있다.[2]</p>
+<h2 id="망-교환">망 교환</h2>
+<p>네트워크에서 노드간 통신을 효율적으로 하기 위해, 통신을 하려는 노드들이 모두 연결된 교환기(switch)에서의 처리를 통해 노드들이 모두 연결(complete graph)되지 않고서도 서로 정보를 교환할 수 있도록 한 방식이다.[3]</p>
+<h3 id="회선교환">회선교환</h3>
+<p>회선 교환은 두 네트워크 노드(컴퓨터 등)이 전용(두 노드간 통신만을 위한) 통신 회선을 통해 통신하는 방식이다. 이 회선은 해당 회선의 최대 대역폭을 지원하고, 실제 물리적으로 직접 연결된 것 처럼 작동하며, 통신이 시작되기 전에 연결되어 세션이 끝날때 까지 연결 상태를 유지한다.[4]</p>
+<h4 id="전화-교환망">전화 교환망</h4>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Jersey_Telecom_switchboard_and_operator.jpg/375px-Jersey_Telecom_switchboard_and_operator.jpg" alt="img"> <em>(사진1, Wikimedia commons)</em> <br>
+전화 교환망은 고객간의 통신을 스위칭을 통해 지원해주는 전화 시스템이다.<br>
+초창기에는 전화 교환원을 통해 고객들의 회선들이 나열되어있는 플러그 보드에 직접 플러그를 꽂아 연결하는 방식이었다.(사진1)<br>
+후에는 다이얼 톤을 통해 자동으로 연결해주는 방식이 등장하였다.<br>
+[5][6]</p>
+<h3 id="패킷교환">패킷교환</h3>
+<p>패킷 교환이란 네트워크를 통해 데이터를 전달할 때, 해당 데이터를 패킷이란 단위로 묶어 전달하는 방법을 말한다.<br>
+패킷 교환은 회선 교환 방식과 달리 대역폭을 다른 통신 세션과 공유하므로 해당 회선의 전체 대역폭을 사용할 수 있는 것은 아니다. 또한 하나의 파일을 이루는 패킷들이더라도 각각의 패킷은 개별적으로 경로가 결정되므로 경로도 다를 수 있고, 그에 따라 순차적으로 보내진 데이터의 도착 시점도 상이할 수 있다. 따라서 패킷에는 해당 패킷의 위치가 명시되어 있다.<br>
+[7][8]</p>
+<h4 id="패킷">패킷</h4>
+<p>패킷이란 네트워크를 통해 전달되는, 형식을 가진 데이터이다.<br>
+패킷은 컨트롤 정보와 유저 정보로 구성되어있는데, 컨트롤 정보는 유저 정보를 전달하기 위해 필요한 정보(네트워크 주소, 에러 확인 코드 등)를 담고 있고, 유저 정보는 전달하고자 하는 실제 정보를 뜻한다.<br>
+패킷은 컨트롤 정보와 유저 정보로 구성되어있는데, 컨트롤 정보는 유저 정보를 전달하기 위해 필요한 정보(네트워크 주소, 에러 확인 코드 등)를 담고 있고, 유저 정보는 전달하고자 하는 실제 정보를 뜻한다. [9]</p>
+<h4 id="라우터">라우터</h4>
+<p>라우터는 컴퓨터 네트워크에서 패킷을 전송하는 장치이다. 패킷의 전송 위치에 따라 목적지 까지의 최적 경로를 지정하여 전송한다.<br>
+[10]</p>
+<h2 id="프로토콜">프로토콜</h2>
+<p>프로토콜은 컴퓨터의 내부, 또는 컴퓨터 사이에서 데이터의 교환이 이루어지는 물리적적 논리적 양식과 규칙 체계이다.<br>
+물리적 측면으로는 접속 단자, 회선 규격 등이 있으며, 논리 측면에서는 자료의 형식 단위 구성(프레임)과 자료 전송의 절차 등이 있다.[11]</p>
+<h3 id="iso-참조모델osi-참조모델-7계층">ISO 참조모델(OSI 참조모델 7계층)</h3>
+<p>OSI 모델이란 표준 프로토콜을 통해 서로 다른 컴퓨터 시스템이 서로 통신할수 있도록 하는 표준을 제공하는 개념 모델이다.<br>
+OSI 모델을 통해 데이터를 보낼때는 7계층 -&gt; 1계층의 이동이 일어나고, 반대로 데이터를 받을 경우에는 1계층 -&gt; 7계층의 이동이 일어난다. [12]</p>
+<h2 id="인터넷">인터넷</h2>
+<p>인터넷이란 TCP/IP 프로토콜 수트을 이용해 컴퓨터간 정보를 주고받는 네트워크이다. [13]<br>
+</p>
+<p><strong>인터넷 프로토콜 스택</strong> <br>
+인터넷 프로토콜 스택은 인터넷 프로토콜 수트(suite)의 소프트웨어적 구현이다.<br>
+인터넷 프로토콜 수트는 보통 TCP/IP를 지칭하고, 이는 기능에 따라 컴퓨터 네트워크에서 사용되는 전송 프로토콜을 정리한 것이다. [14] [15]</p>
+<h3 id="물리계층">물리계층</h3>
+<p>OSI 모델에서, 물리계층은 제 1계층을 지칭하며 이는 가장 낮은 계층으로 기기들 간의 물리적 연결과 긴밀히 관련된 계층이다.<br>
+물리계층은 통신 커넥터의 모양과 전파의 주파수 등, 전달 매체의 전기, 공학적인 인터페이스를 제공한다. [16]</p>
+<h4 id="통신선">통신선</h4>
+<p>통신선이란 통신을 위한 신호를 전달할 수 있는 물질 또는 시스템을 의미한다.<br>
+무선 통신에서의 rf, 광통신을 위한 광 케이블, 가장 기본적인 구리 케이블 등이 통신선이 될 수 있다. [16] [17]</p>
+<h4 id="모뎀">모뎀</h4>
+<p>모뎀(MODEM)이란 통신을 위해 신호를 변조(MOdulate)하여 송신하고, 수신시 원래의 신호로 복조(DEModulate)하는 장치를 말한다. [18]</p>
+<h3 id="링크계층">링크계층</h3>
+<p>OSI 모델에서의 제 2계층인, 링크계층은 물리 계층을 통해 데이터를 전송하는 계층이고, 주소 할당, 오류 감지의 주요한 기능이 있다. [19]</p>
+<h4 id="네트워크-토폴로지">네트워크 토폴로지</h4>
+<p>네트워크 토폴로지는 컴퓨터와 같은 네트워크 장치들이 연결되어있는 방식을 의미한다.<br>
+흔히 버스형, 성형(star), 링형, 트리형(hierarchical), 망형이 있다. [20]</p>
+<h5 id="성형">성형</h5>
+<p>성형은 이터넷 랜 방에서 가장 흔히 보이는 형태로, 각각의 노드(장치)들이 하나의 중앙 장치에 연결된 형태를 가진다.<br>
+이런 중앙 집중적 형태는 다른 장치들이 망가지더라도 정상적인 동작을 할 수 있지만, 중앙 장치가 망가지면 전체 네트워크가 기능을 하지 못한다. [20]</p>
+<h5 id="링형">링형</h5>
+<p>링형은 각각의 노드가 양 옆의 두 노드와 연결하여 전체적으로 고리 형태를 가진다.<br>
+프레임이란 단위가 고리를 빙빙 순환하며, 각 노드에 프레임이 도착했을 때, 한 노드에서 데이터를 보내려면 프레임에 원하는 주소와 데이터를 추가하고, 프레임이 해당 주소에 도착했을때 그 데이터를 전달한다. 하나의 고리라도 끊어진다면 전체 통신이 끊어질 가능성이 있지만, 방향을 가진 두개의 고리를 사용하여 해당 문제를 극복할 수 있다. [20] [21]</p>
+<h5 id="버스형">버스형</h5>
+<p>버스형은 각각의 노드들이 하나의 케이블을 이용해 모두 연결된 형태이다.<br>
+하나의 노드가 신호를 전송하면, 메인 케이블을 통해 양방향의 모든 노드로 전달되고, 노드의 소프트웨어를 통해 본인에게 지정된 메세지만을 수신하도록 구현한다. [20] [22]</p>
+<h5 id="트리형">트리형</h5>
+<p>트리형(계층형)은 성형과 비슷하지만 중앙 장치를 사용하지 않는다는 점이 다르다.<br>
+하지만 상위 계층의 노드가 망가진다면 해당 노드보다 하위노드의 연결이 끊어진다는 단점이 있다. [20]</p>
+<h5 id="망형">망형</h5>
+<p>망형은 모든 노드를 각각 연결하는 full-mesh형과 일부의 노드만 연결하는 partial-mesh형이 존재하고, 다른 모든 형태에 비해 안정적이다. [20]</p>
+<h4 id="mac-주소">MAC 주소</h4>
+<p>MAC 주소는 링크계층에서의 인터페이스에 할당된 고유 식별자이다. 대체로 네트워크 하드웨어 제조업체가 할당하며 하드웨어에 저장되어 있다. MAC 주소는 이더넷, 와이파이 등의 소규모 네트워크 단위를 다루는 ieee802 네트워크에서의 주소로 사용된다. [23]</p>
+<h4 id="이더넷">이더넷</h4>
+<p>이더넷은 LAN, MAN, WAN에서 가장 많이 활용되는 컴퓨터 네트워크 규격이다.<br>
+이더넷에 연결된 장치들은 MAC 주소를 통해 데이터를 주고받으며, 전송 매체로는 UTP 케이블 등을 사용하고 각 장치의 연결을 위해 허브, 스위치 등의 장치를 사용한다. [24]</p>
+<h3 id="네트워크-계층">네트워크 계층</h3>
+<p>OSI 모델에서의 제 3계층인 네트워크 계층은 라우팅 등을 포함하는 패킷 포워딩을 수행하는 계층이다.<br>
+구체적으로 가변 길이의 패킷을 특정 기기로 하나이상의 네트워크를 통해 전송하는 역할을 한다. [25]</p>
+<h4 id="domain-name">Domain Name</h4>
+<p>Domain name은 네트워크에서 컴퓨터를 식별하는 고유한 이름으로, 도메인 네임 레지스트리를 통해 해당 도메인 네임에 상응하는 ip주소로 이동할 수 있다. [26]</p>
+<h5 id="dnsdomain-name-service">DNS(Domain Name Service)</h5>
+<p>DNS 는 유저가 숫자 또는 문자의 무작위적 조합인 ip 주소 대신, 0-9,A-z 등의 문자로 이루어진 일종의 별명을 사용하여 웹에 접속하는 것을 가능하게 한다. 하지만 DNS 하이재킹, 캐시 오염등의 취약점으로 인해 원래 도메인 네임이 가르키는 사이트가 아닌 악성 사이트에 접속될 리스크가 있다. [27]</p>
+<h4 id="ip주소">IP주소</h4>
+<p>IP주소는 네트워크에서 컴퓨터들이 서로를 인식하고 통신을 하기 위해 사용하는, 각각의 컴퓨터에 부여된 일종의 번호이다. 이전에 사용되던 IPv4 규격과, IPv4 규격의 주소가 부족해져 새로 만든 규격인 IPv6이 있다. [28]</p>
+<h4 id="캡슐화역캡슐화">캡슐화/역캡슐화</h4>
+<p>캡슐화란, OSI 모델에서 정보를 송신할때 7계층 -&gt; 1계층으로 유저 데이터가 이동하는 과정에서, 각 계층에서의 제어 정보를 헤더, 트레일러 등을 이용해 추가하는 방법이다.<br>
+역캡슐화란, OSI 모델에서 정보를 수신할때 1계층 -&gt; 7계층으로 데이터가 이동하는 과정에서, 데이터에 붙어있는 제어 정보(헤더, 트레일러)를 해석하며 제거해나가는 방식이다. [29]</p>
+<h5 id="헤더트레일러">헤더/트레일러</h5>
+<p>헤더와 트레일러는 각각 데이터의 맨 앞, 맨 뒤에 있는 요소를 가리키며, 헤더는 보통 제어 정보를, 트레일러는 보통 에러 검출을 위한 데이터를 담고 있다. [30]</p>
+<h4 id="라우팅">라우팅</h4>
+<p>라우팅(routing, route + ing)은 정보 통신시 미리 정해진 규칙에 따라 네트워크 주소와 네트워크 토폴로지, 부하, 비용 등을 고려해 목적지까지의 경로를 결정하는 과정이다. 이 기능을 수행하는 장치를 라우터라고 한다. [31] [32]</p>
+<h3 id="수송계층">수송계층</h3>
+<p>OSI 제 4계층인 수송계층은 신뢰성 있는 양 끝단 통신을 가능하게 해주는, 유효성을 검증하는 계층이다. 예시로는 TCP, UDP 가 있다. [33]</p>
+<h4 id="포트-번호프로세스-식별자">포트 번호(프로세스 식별자)</h4>
+<p>포트(포트 번호)란 하나의 호스트에서 동시에 실행되는 여러 프로세스의 네트워크 통로를 식별하여주는 역할을 하는 추상적인 개념이다. [34]</p>
+<h4 id="well-known-ports">Well-Known Ports</h4>
+<p>Well-Known Ports는 일종의 특정 기능을 하는 각 프로세스에게 예약된 포트 번호로, 구체적으로는 iana에 등록되어있는 포트번호를 뜻한다.<br>
+예시로 80번의 http, 22번의 ssh 등이 있다. [34] [35]</p>
+<h3 id="응용계층">응용계층</h3>
+<p>OSI 모델에서 일종의 유저 인터페이스 역할을 하며, 데이터를 인간이 인식가능한 형식으로 표시하며, 아래 계층인 Presentation layer와 상호작용할 수 있게 한다. [36]</p>
+<h4 id="url">URL</h4>
+<p>Url은 인터넷에서 웹 페이지, 이미지 등의 리소스를 가르키는 웹 주소이다.<br>
+HTTP 접속, FTP, 이메일 등에서 사용할 수 있다. [37]</p>
+<h4 id="http">HTTP</h4>
+<p>http는 웹 상에서 웹 서버와 브라우저 간의 데이터 전송을 위한 응용계층의 프로토콜이다. 하이퍼텍스트, 이미지, 비디오 등의 거의 모든 형식의 데이터 전송을 지원한다. [38]</p>
+<h4 id="ftp">FTP</h4>
+<p>ftp(file transfer protocol)은 TCP/IP 프로토콜을 이용해 서버와 클라이언트 간의 파일 전송을 위한 프로토콜이다. [39]</p>
+<h4 id="smtp">SMTP</h4>
+<p>smtp(simple mil transfer protocol)은 TCP 통신을 이용해 두 메일 시스템간에 전자우편을 교환할 수 있게 해주는 프로토콜이다. [40]</p>
+<h4 id="pop3imap">POP3/IMAP</h4>
+<p>pop3과 imap은 외부의 메일 서버에 사용자 id로 접속하여, 메일박스에 도착한 메일을 가져오기 위해 사용하는 프로토콜이다. [41] [42]</p>
+<h1 id="references">References</h1>
+<p>[1] 고석주, <a href="http://et.al">et.al</a>., 4차 산업시대의 컴퓨터학개론</p>
+<p>[2] Wikipedia, Computer network<br>
+(<a href="https://en.m.wikipedia.org/wiki/Computer_network">https://en.m.wikipedia.org/wiki/Computer_network</a>)</p>
+<p>[3] Tutorialspoint, Network switching<br>
+(<a href="https://www.tutorialspoint.com/data_communication_computer_network/physical_layer_switching.htm#">https://www.tutorialspoint.com/data_communication_computer_network/physical_layer_switching.htm#</a>)</p>
+<p>[4] Wikipedia, Circuit switching<br>
+(<a href="https://en.wikipedia.org/wiki/Circuit_switching">https://en.wikipedia.org/wiki/Circuit_switching</a>)</p>
+<p>[5] Wikipedia, Telephone exchange<br>
+(<a href="https://en.wikipedia.org/wiki/Telephone_exchange">https://en.wikipedia.org/wiki/Telephone_exchange</a>)</p>
+<p>[6] Wikipedia, Dual-tone multi-frequency signaling<br>
+(<a href="https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling">https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling</a>)</p>
+<p>[7] Wikipedia, Packet switching<br>
+(<a href="https://en.wikipedia.org/wiki/Packet_switching">https://en.wikipedia.org/wiki/Packet_switching</a>)</p>
+<p>[8] 위키백과, 패킷 교환<br>
+(<a href="https://ko.wikipedia.org/wiki/%ED%8C%A8%ED%82%B7_%EA%B5%90%ED%99%98">https://ko.wikipedia.org/wiki/패킷_교환</a>)</p>
+<p>[9] Wikipedia, Network packet<br>
+(<a href="https://en.wikipedia.org/wiki/Network_packethttps://en.wikipedia.org/wiki/Network_packet">https://en.wikipedia.org/wiki/Network_packethttps://en.wikipedia.org/wiki/Network_packet</a>)</p>
+<p>[10] 위키백과, 라우터<br>
+(<a href="https://ko.m.wikipedia.org/wiki/%EB%9D%BC%EC%9A%B0%ED%84%B0">https://ko.m.wikipedia.org/wiki/라우터</a>)</p>
+<p>[11] 위키백과, 통신 프로토콜<br>
+(<a href="https://ko.wikipedia.org/wiki/%ED%86%B5%EC%8B%A0_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">https://ko.wikipedia.org/wiki/통신_프로토콜</a>)</p>
+<p>[12] Cloudflare, OSI 모델이란?<br>
+(<a href="https://www.cloudflare.com/ko-kr/learning/ddos/glossary/open-systems-interconnection-model-osi/">https://www.cloudflare.com/ko-kr/learning/ddos/glossary/open-systems-interconnection-model-osi/</a>)</p>
+<p>[13] 위키백과, 인터넷<br>
+(<a href="https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7">https://ko.wikipedia.org/wiki/인터넷</a>)</p>
+<p>[14] Wikipedia, Protocol stack<br>
+(<a href="https://en.wikipedia.org/wiki/Protocol_stack">https://en.wikipedia.org/wiki/Protocol_stack</a>)</p>
+<p>[15] Wikipedia, Internet protocol suite<br>
+(<a href="https://en.wikipedia.org/wiki/Internet_protocol_suite">https://en.wikipedia.org/wiki/Internet_protocol_suite</a>)</p>
+<p>[16] Wikipedia, Physical layer<br>
+(<a href="https://en.wikipedia.org/wiki/Physical_layer">https://en.wikipedia.org/wiki/Physical_layer</a>)</p>
+<p>[17] Wikipedia, Transmission medium<br>
+(<a href="https://en.wikipedia.org/wiki/Transmission_medium">https://en.wikipedia.org/wiki/Transmission_medium</a>)</p>
+<p>[18] 위키백과, 모뎀<br>
+(<a href="https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8E%80">https://ko.wikipedia.org/wiki/모뎀</a>)</p>
+<p>[19] 위키백과, 데이터 링크 계층<br>
+(<a href="https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%A7%81%ED%81%AC_%EA%B3%84%EC%B8%B5">https://ko.wikipedia.org/wiki/데이터_링크_계층</a>)</p>
+<p>[20] (Archieved)Learn Networking, A Guide to Network Topology<br>
+(<a href="https://web.archive.org/web/20080919061657/http://learn-networking.com/network-design/a-guide-to-network-topology">https://web.archive.org/web/20080919061657/http://learn-networking.com/network-design/a-guide-to-network-topology</a>)</p>
+<p>[21] 위키백과, 링 네트워크<br>
+(<a href="https://ko.wikipedia.org/wiki/%EB%A7%81_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">https://ko.wikipedia.org/wiki/링_네트워크</a>)</p>
+<p>[22] 위키백과, 버스 네트워크<br>
+(<a href="https://ko.wikipedia.org/wiki/%EB%B2%84%EC%8A%A4_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">https://ko.wikipedia.org/wiki/버스_네트워크</a>)</p>
+<p>[23] 위키백과, MAC 주소<br>
+(<a href="https://ko.wikipedia.org/wiki/MAC_%EC%A3%BC%EC%86%8C">https://ko.wikipedia.org/wiki/MAC_주소</a>)</p>
+<p>[24] 위키백과, 이더넷<br>
+(<a href="https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%8D%94%EB%84%B7">https://ko.wikipedia.org/wiki/이더넷</a>)</p>
+<p>[25] Wikipedia, Network layer<br>
+(<a href="https://en.wikipedia.org/wiki/Network_layer">https://en.wikipedia.org/wiki/Network_layer</a>)</p>
+<p>[26] Wikipedia, 도메인 네임<br>
+(<a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EB%A9%94%EC%9D%B8_%EB%84%A4%EC%9E%84">https://ko.wikipedia.org/wiki/도메인_네임</a>)</p>
+<p>[27] IBM, DNS는 무엇인가요?<br>
+(<a href="https://www.ibm.com/kr-ko/topics/dns">https://www.ibm.com/kr-ko/topics/dns</a>)</p>
+<p>[28] 위키백과, IP 주소<br>
+(<a href="https://ko.wikipedia.org/wiki/IP_%EC%A3%BC%EC%86%8C">https://ko.wikipedia.org/wiki/IP_주소</a>)</p>
+<p>[29] 정보통신기술용어해설(<a href="http://ktworld.co.kr">ktworld.co.kr</a>), Encapsulation, Encapsulating 캡슐화<br>
+(<a href="http://www.ktword.co.kr/test/view/view.php?m_temp1=379">http://www.ktword.co.kr/test/view/view.php?m_temp1=379</a>)</p>
+<p>[30] 정보통신기술용어해설(<a href="http://ktworld.co.kr">ktworld.co.kr</a>), Overhead 오버헤드<br>
+(<a href="http://www.ktword.co.kr/test/view/view.php?m_temp1=894&amp;id=278">http://www.ktword.co.kr/test/view/view.php?m_temp1=894&amp;id=278</a>)</p>
+<p>[31] 정보통신기술용어해설(<a href="http://ktworld.co.kr">ktworld.co.kr</a>), Overhead 오버헤드<br>
+(<a href="http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=539&amp;sh=%EB%9D%BC%EC%9A%B0%ED%8C%85">http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=539&amp;sh=라우팅</a>)</p>
+<p>[32] Amazon AWS, Routing 라우팅, 루팅, 중계방식<br>
+(<a href="https://aws.amazon.com/ko/what-is/routing/">https://aws.amazon.com/ko/what-is/routing/</a>)</p>
+<p>[33] 나무위키, OSI 모형<br>
+(<a href="https://namu.wiki/w/OSI%20%EB%AA%A8%ED%98%95">https://namu.wiki/w/OSI 모형</a>)</p>
+<p>[34] 정보통신기술용어해설(<a href="http://ktworld.co.kr">ktworld.co.kr</a>), Port Number, TCP Port/UDP Port 포트 번호, 소프트웨어 포트, TCP/UDP 포트, TCP 포트, UDP 포트<br>
+(<a href="http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=5149&amp;sh=%ED%8F%AC%ED%8A%B8+%EB%B2%88%ED%98%B8">http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=5149&amp;sh=포트+번호</a>)</p>
+<p>[35] Internet Assigned Numbers Authority, Service Name and Transport Protocol Port Number Registry<br>
+(<a href="http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml">http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml</a>)</p>
+<p>[36] <a href="http://inetdaemon.com">inetdaemon.com</a>, The OSI Model - Application Layer<br>
+(<a href="https://www.inetdaemon.com/tutorials/basic_concepts/network_models/osi_model/application.shtml">https://www.inetdaemon.com/tutorials/basic_concepts/network_models/osi_model/application.shtml</a>)</p>
+<p>[37] Wikipedia, URL<br>
+(<a href="https://en.wikipedia.org/wiki/URL">https://en.wikipedia.org/wiki/URL</a>)</p>
+<p>[38] 정보통신기술용어해설(<a href="http://ktworld.co.kr">ktworld.co.kr</a>), http hypertext transfer protocol<br>
+(<a href="http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=648&amp;sh=http">http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=648&amp;sh=http</a>)</p>
+<p>[39] 위키백과, 파일 전송 프로토콜<br>
+(<a href="https://ko.m.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC_%EC%A0%84%EC%86%A1_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">https://ko.m.wikipedia.org/wiki/파일_전송_프로토콜</a>)</p>
+<p>[40] 정보통신기술용어해설(<a href="http://ktworld.co.kr">ktworld.co.kr</a>), smtp simple mail transfer protocol<br>
+(<a href="http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=196&amp;sh=smtp">http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=196&amp;sh=smtp</a>)</p>
+<p>[41] 정보통신기술용어해설(<a href="http://ktworld.co.kr">ktworld.co.kr</a>), POP, POP3   Post Office Protocol, Post Office Protocol Version 3<br>
+(<a href="http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=992&amp;sh=pop3">http://www.ktword.co.kr/test/view/view.php?nav=2&amp;no=992&amp;sh=pop3</a>)</p>
+<p>[42] Wikipedia, internet message access protocol<br>
+(<a href="https://en.m.wikipedia.org/wiki/Internet_Message_Access_Protocol">https://en.m.wikipedia.org/wiki/Internet_Message_Access_Protocol</a>)</p>
+</div>
+</body>
+
+</html>
